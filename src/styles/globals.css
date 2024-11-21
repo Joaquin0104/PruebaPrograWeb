@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-color: #1b2838; /* Fondo similar al de Steam */
+  }
+  
+  .steam-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme entre logo, nav-links, y user-actions */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 40px; /* Ajusta el padding para evitar desbalance */
+    background-color: #1b2838; /* Fondo del header */
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 1000; /* Asegura que el header esté siempre encima de otros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar relieve */
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los enlaces dentro del contenedor */
+    gap: 20px; /* Espacio uniforme entre los enlaces */
+    flex: 1; /* Hace que el nav ocupe espacio entre logo y user-actions */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nav-links a.active {
+    color: #5cacee; /* Color azul para el enlace activo */
+    text-decoration: underline;
+  }
+  
+  .logo {
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+    
+}
+
+  .logo img {
+    height: 40px;
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+    top: 0;
+    gap: 10px;
+    margin-left: auto; /* Empuja las acciones hacia la derecha */
+    align-self: flex-start; /* Alinea el nav arriba dentro del header */
+    margin-top: 0;
+  }
+  
+  .install-btn {
+    background-color: #5c941f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .install-btn:hover {
+    background-color: #6bbd26; /* Cambia el color al pasar el cursor */
+  }
+  
+  .arrow-down {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-left: 5px;
+  }
+  
